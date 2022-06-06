@@ -1,0 +1,44 @@
+{
+    "pria": {
+        "short_name": "Afif & Lilis",
+        "date": "25 July 2022",
+        "hour": "08:00:00",
+        "f_name": "Afif",
+        "s_name": "Lilis",
+        "f_full_name": "Afif Burhanuddin Nur, S.Si.",
+        "s_full_name": "Lilis Putri Rizqiyah, S.M.",
+        "f_couple_sparator": "Putra dari Pasangan",
+        "s_couple_sparator": "Putri dari Pasangan",
+        "f_parent_father": "Bapak H. Imam Zainuri, S.Pd., M.M.",
+        "f_parent_mother": "Ibu Hj. Siti Khodijah",
+        "s_parent_father": "Bapak Sarwono",
+        "s_parent_mother": "Ibu Sekartani",
+        "f_instagram": "https://instagram.com/afifundr",
+        "s_instagram": "https://instagram.com/rizqiyahh___",
+        "akad_date": {
+            "day":"Minggu",
+            "year":"2022",
+            "month":"July",
+            "day_num":"24",
+            "location":"Kediaman Mempelai Wanita",
+            "time_range":"08:00 - Selesai",
+            "address": "Ds. Sidoharjo, Dsn. Tumpak RT 32 RW 06, Gang 2, Kec. Gedeg, Kab. Mojokerto, Jawa Timur."
+        },
+        "reception_date": {
+            "day":"Senin",
+            "year":"2022",
+            "month":"July",
+            "day_num":"25",
+            "location":"Kediaman Mempelai Pria",
+            "time_range":"08:00 - Selesai",
+            "address": "Ds. Batankrajan RT 02 RW 04, Kec. Gedeg, Kab. Mojokerto, Jawa Timur."
+        },
+        "gmaps": {
+            "lat": "-7.431464020941175",
+            "long": "112.41408769379359"
+        },
+        "gcalendar": "",
+        "ycalendar": "",
+        "gmaps_iframe": ""
+    }
+}

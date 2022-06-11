@@ -18,7 +18,7 @@
     <meta name=keywords content="datengdong,undangan,pernikahan,online,website,wedding,invitation">
     <meta property="og:title" content="{{$data['pria']['short_name']}} Wedding">
     <meta property="og:description" content="{{$data['pria']['short_name']}} are getting married on {{$data['pria']['akad_date']['day']}}, {{$data['pria']['date']}}.">
-    <meta property="og:image" content="#">
+    <meta property="og:image" content="{{asset('assets/images/1638808563359.webp')}}">
     <title>{{$data['pria']['short_name']}} Wedding</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
@@ -26,11 +26,12 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/themes/style.css?v=1.2.1">
+    <link rel="stylesheet" href="{{asset('assets/themes/style.css?v=1.2.1')}}">
     <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-    <link href="assets/themes/evergreen/style.css?v=1.0.6" rel="stylesheet">
+    <link href="{{asset('assets/themes/evergreen/style.css?v=1.0.6')}}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 
 <body>
@@ -57,12 +58,7 @@
                             d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 3.5c0-.276.244-.5.545-.5h10.91c.3 0 .545.224.545.5v1c0 .276-.244.5-.546.5H2.545C2.245 5 2 4.776 2 4.5v-1zm8.854 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z">
                         </path>
                     </svg><span class="d-none d-lg-block"> Event </span></a></li>
-            <li class="nav-item"><a class="nav-link" href="#gallery"><svg width=1.0625em height=1em viewBox="0 0 17 16"
-                        class="bi bi-image-fill" fill="currentColor" xmlns="https://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M.002 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2V3zm1 9l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094L15.002 9.5V13a1 1 0 0 1-1 1h-12a1 1 0 0 1-1-1v-1zm5-6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z">
-                        </path>
-                    </svg><span class="d-none d-lg-block"> Gallery </span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#countdown"><i class="fa fa-map-location"></i><span class="d-none d-lg-block"> Location </span></a></li>
             <li class="nav-item"><a class="nav-link" href="#guestbook"><svg width=1em height=1em viewBox="0 0 16 16"
                         class="bi bi-chat-left-dots-fill" fill="currentColor" xmlns="https://www.w3.org/2000/svg">
                         <path fill-rule="evenodd"
@@ -72,7 +68,7 @@
         </ul>
     </nav>
     <section
-        style="background:url(assets/images/1638808563359.webp) center no-repeat;"
+        style="background:url({{asset('assets/images/1638808563359.webp')}}) center no-repeat;"
         class="cover" id="home">
         <div class="title text-center">
             <div data-aos="fade-up" data-aos-delay="200">
@@ -95,7 +91,7 @@
 
 
     <section
-        style="background:url(assets/images/1638808563359.webp) center no-repeat;"
+        style="background:url({{asset('assets/images/1638808563359.webp')}}) center no-repeat;"
         class="curved page-holder bg-cover" id="particles-js">
         <div class="container">
             <header class="text-center text-white vh-100 row align-items-center justify-content-center">
@@ -138,8 +134,8 @@
                     <div class="row">
                         <div class="col-12 px-5">
                             <div class="couple-ring">
-                                <img src=https://gurasanatalia.datengdong.com/uploads/thumbs/couple/yb5tls9uuc.png
-                                    alt="Natalia Photo" class="img-fluid">
+                                <img src={{asset('assets/images/lilis.jpeg')}}
+                                    alt="Lilis Photo" class="img-fluid">
                             </div>
                             <h2 class="mt-3">
                                 <span style="font-size:1.6rem;color:#6792b7">{{$data['pria']['s_name']}}</span>
@@ -165,8 +161,8 @@
                     <div class="row">
                         <div class="col-12 px-5">
                             <div class="couple-ring">
-                                <img src=https://gurasanatalia.datengdong.com/uploads/thumbs/couple/whq8v10pcp.png
-                                    alt="Gurasa Photo" class="img-fluid">
+                                <img src={{asset('assets/images/afif.jpg')}}
+                                    alt="Afif Photo" class="img-fluid">
                             </div>
                             <h2 class="mt-3">
                                 <span style="font-size:1.6rem;color:#6792b7">{{$data['pria']['f_name']}}</span>
@@ -199,7 +195,7 @@
 
 
     <section class="location" id="event"
-        style="background:url(assets/images/1638808563608.webp) center center no-repeat;background-size: cover;">
+        style="background:url({{asset('assets/images/1638808563608.webp')}}) center center no-repeat;background-size: cover;">
         <div class="custom-shape-divider-top-1610288850">
             <img src=https://gurasanatalia.datengdong.com/themes/evergreen/images/sparator-1.svg alt="brush">
         </div>
@@ -261,47 +257,37 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="custom-shape-divider-bottom-1614342402">
-            <img src=https://gurasanatalia.datengdong.com/themes/evergreen/images/sparator-1.svg alt="brush">
-        </div>
-    </section>
-
-    <section class="gallery" id="gallery">
-        <div class="container mb-5">
-            <img src=https://gurasanatalia.datengdong.com/themes/evergreen/images/sparator2.png alt="list" class="mb-3"
-                style="max-height:50px" data-aos="zoom-in" data-aos-delay="100">
-            <div class="d-flex w-100 align-items-center justify-content-center mb-5" data-aos="flip-up"
-                data-aos-delay="200">
-                <h2 class="caption">Our Gallery</h2>
-            </div>
-
-            <div class="col-lg-12">
-            <div class="row">
-                    <div class="col-md-3 col-6 py-2 px-2 frame" data-aos="zoom-in" data-aos-delay="100">
-                        <a href="https://demo.datengdong.com/uploads/original/gallery/1949d9111354e8962623050b26440179f5caddd0.jpg">
-                            <img src=https://demo.datengdong.com/uploads/thumbs/gallery/1949d9111354e8962623050b26440179f5caddd0MS.jpg alt="Gallery 1" class="img-fluid" style="border:unset !important;"></a>
+                <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card information h-100">
+                        <div class="card-body">
+                            <h3 class="mt-4">Resepsi
+                                <hr>
+                            </h3>
+                            <div class="row mt-4">
+                                <div class="col pt-1 font-weight-bold" style="font-size:0.9rem">
+                                    {{$data['pria']['reception_date_s']['day']}} <br>
+                                    {{$data['pria']['reception_date_s']['year']}}
+                                </div>
+                                <div class="col date">
+                                    <span class="d-block">{{$data['pria']['reception_date_s']['day_num']}}</span>
+                                    {{$data['pria']['reception_date_s']['month']}}
+                                </div>
+                                <div class="col pt-1 font-weight-bold" style="font-size:0.9rem">
+                                    {{$data['pria']['reception_date_s']['location']}}
+                                </div>
+                            </div>
+                            <p class="desc-location mt-3">
+                                {{$data['pria']['reception_date_s']['time_range']}} <br>
+                                {{$data['pria']['reception_date_s']['address']}}
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <br><br>
-    <section class="parallax text-center mt-5"
-        style="background-image: url(assets/images/2.webp);">
-        <div class="container">
-            <div class="col-md-12 pt-4">
-                <p><span>"</span>Tidak ada solusi yang lebih baik bagi dua insan yang saling mencintai di banding
-                    pernikahan.<span>"</span></p>
-                <h3 class="mb-5">HR. Ibnu Majah</h3>
-            </div>
-        </div>
         <div class="custom-shape-divider-bottom-1614342402">
             <img src=https://gurasanatalia.datengdong.com/themes/evergreen/images/sparator-1.svg alt="brush">
         </div>
     </section>
-
 
     <section id="countdown">
         <div class="container text-center mt-5">
@@ -349,26 +335,71 @@
             </div>
             <div class="col-lg-8 mx-auto">
                 <br><br>
-                <a target="_blank"
-                    href="https://www.google.com/maps/dir/?api=1&destination=3.598406,98.645931&zoom=20&dir_action=navigate"
-                    class="btn btn-secondary mt-2 mx-1" data-aos="fade-up" data-aos-delay="500">Open Google Map</a>
-                <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;dates=20220312T050000Z/20220312T165900Z&amp;text=Natalia+%26+Gurasa+Wedding&amp;details=Natalia+%26+Gurasa+Wedding+on+Saturday%2C+12+March+2022&amp;location=Wisma+Taman+Sari+Indah+%7C+Jalan+Kapten+Muslim%2CKel.+Dwikora%2C+Kec.+Medan+Helvetia%2C+Kota+Medan"
+                <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20220724T000000Z%2F20220725T160000Z&text=Afif%20%26%20Lilis%20Wedding&details=Afif%20%26%20Lilis%20Wedding%0A%0AResepsi%20di%20kediaman%20mempelai%20putri%20(24%20July%202022)%0AGoogle%20Maps%3A%20https%3A%2F%2Fgoo.gl%2Fmaps%2FTkSJ387pebujwYNY6%0A%0AResepsi%20di%20kediaman%20mempelai%20pria%20(25%20July%202022)%0AGoogle%20Maps%3A%20https%3A%2F%2Fgoo.gl%2Fmaps%2FDcNhtbiEnCt86Pyj9&location=Kediaman%20Mempelai&allday=false"
                     target="_blank" class="btn btn-secondary mt-2 mx-1" data-aos="fade-up" data-aos-delay="600">Google
                     Calendar</a>
-                <a href="https://calendar.yahoo.com/?v=60&amp;view=d&amp;type=20&amp;ST=20220312T050000Z&amp;ET=20220312T165900Z&amp;TITLE=Natalia%20%26%20Gurasa%20Wedding&amp;DESC=Natalia%20%26%20Gurasa%20Wedding%20on%20Saturday%2C%2012%20March%202022&amp;in_loc=Wisma%20Taman%20Sari%20Indah%20%7C%20Jalan%20Kapten%20Muslim%2CKel.%20Dwikora%2C%20Kec.%20Medan%20Helvetia%2C%20Kota%20Medan"
+                <a href="https://calendar.yahoo.com/?v=60&title=Afif%20%26%20Lilis%20Wedding&desc=Afif%20%26%20Lilis%20Wedding%0A%0AResepsi%20di%20kediaman%20mempelai%20putri%20(24%20July%202022)%0AGoogle%20Maps%3A%20https%3A%2F%2Fgoo.gl%2Fmaps%2FTkSJ387pebujwYNY6%0A%0AResepsi%20di%20kediaman%20mempelai%20pria%20(25%20July%202022)%0AGoogle%20Maps%3A%20https%3A%2F%2Fgoo.gl%2Fmaps%2FDcNhtbiEnCt86Pyj9&in_loc=Kediaman%20Mempelai&st=20220724T070000&dur=4000"
                     target="_blank" class="btn btn-secondary mt-2 mx-1" data-aos="fade-up" data-aos-delay="700">Yahoo
+                    Calendar</a>
+                <a href="https://outlook.live.com/calendar/0/deeplink/compose?rru=addevent&path=%2Fcalendar%2Faction%2Fcompose&startdt=2022-07-24T00%3A00%3A00Z&enddt=2022-07-25T16%3A00%3A00Z&subject=Afif%20%26%20Lilis%20Wedding&body=Afif%20%26%20Lilis%20Wedding%0A%0AResepsi%20di%20kediaman%20mempelai%20putri%20(24%20July%202022)%0AGoogle%20Maps%3A%20https%3A%2F%2Fgoo.gl%2Fmaps%2FTkSJ387pebujwYNY6%0A%0AResepsi%20di%20kediaman%20mempelai%20pria%20(25%20July%202022)%0AGoogle%20Maps%3A%20https%3A%2F%2Fgoo.gl%2Fmaps%2FDcNhtbiEnCt86Pyj9&location=Kediaman%20Mempelai&allday=false"
+                    target="_blank" class="btn btn-secondary mt-2 mx-1" data-aos="fade-up" data-aos-delay="700">Outlook
                     Calendar</a>
                 <br><br><br>
             </div>
-            <div style="width: 100%">
-                <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                    src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=-7.431464020941175,%20112.41408769379359+(Afif%20Burhanuddin%20Nur)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
-                        href="https://www.gps.ie/wearable-gps/">adventure gps</a></iframe>
+            <div class="row">
+                <div class="col-6">
+                    <div class="alert alert-success">Lokasi Kediaman Mempelai Putri</div>
+                    <a target="_blank"
+                    href="https://maps.google.com/maps?ll=-7.433975,112.434902&z=12&t=m&hl=en&gl=US&mapclient=embed&q=7%C2%B026%2702.3%22S%20112%C2%B026%2705.7%22E%20-7.433976%2C%20112.434902@-7.4339755,112.4349021"
+                    class="btn btn-primary mt-1 mb-2 mx-1" data-aos="fade-up" data-aos-delay="500">Open Google Map</a>
+                    <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=-7.433975518526124,%20112.43490208190335+(Lilis%20Putri%20Rizqiyah)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                </div>
+                <div class="col-6">
+                    <div class="alert alert-success">Lokasi Kediaman Mempelai Pria</div>
+                    <a target="_blank"
+                    href="https://maps.google.com/maps?ll=-7.431464,112.414088&z=12&t=m&hl=en&gl=US&mapclient=embed&q=7%C2%B025%2753.3%22S%20112%C2%B024%2750.7%22E%20-7.431464%2C%20112.414088@-7.431464,112.4140877"
+                    class="btn btn-primary mt-1 mb-2 mx-1" data-aos="fade-up" data-aos-delay="500">Open Google Map</a>
+                    <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=-7.431464020941175,%20112.41408769379359+(Afif%20Burhanuddin%20Nur)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                </div>
             </div>
         </div>
     </section>
+    
+    <section class="gallery" id="gallery" style="display:none;">
+        <div class="container mb-5">
+            <img src=https://gurasanatalia.datengdong.com/themes/evergreen/images/sparator2.png alt="list" class="mb-3"
+                style="max-height:50px" data-aos="zoom-in" data-aos-delay="100">
+            <div class="d-flex w-100 align-items-center justify-content-center mb-5" data-aos="flip-up"
+                data-aos-delay="200">
+                <h2 class="caption">Our Gallery</h2>
+            </div>
 
-
+            <div class="col-lg-12">
+            <div class="row">
+                    <div class="col-md-3 col-6 py-2 px-2 frame" data-aos="zoom-in" data-aos-delay="100">
+                        <a href="https://demo.datengdong.com/uploads/original/gallery/1949d9111354e8962623050b26440179f5caddd0.jpg">
+                            <img src=https://demo.datengdong.com/uploads/thumbs/gallery/1949d9111354e8962623050b26440179f5caddd0MS.jpg alt="Gallery 1" class="img-fluid" style="border:unset !important;"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <section class="parallax text-center mt-5"
+        style="background-image: url({{asset('assets/images/2.webp')}});">
+        <div class="container">
+            <div class="col-md-12 pt-4">
+                <p><span>"</span>Tidak ada solusi yang lebih baik bagi dua insan yang saling mencintai di banding
+                    pernikahan.<span>"</span></p>
+                <h3 class="mb-5">HR. Ibnu Majah</h3>
+            </div>
+        </div>
+        <div class="custom-shape-divider-bottom-1614342402">
+            <img src=https://gurasanatalia.datengdong.com/themes/evergreen/images/sparator-1.svg alt="brush">
+        </div>
+    </section>
     <section class="guestbook left-flower right-flower" id="guestbook">
         <div class="container">
             <img src=https://gurasanatalia.datengdong.com/themes/evergreen/images/sparator2.png alt="list" class="mb-2"
@@ -551,6 +582,7 @@
     <script src=https://gurasanatalia.datengdong.com/js/musicv2.js?v=1.0.0> </script>
     <script src=https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js> </script>
     <script src=https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
     <script>
         AOS.init();
         $('.gallery a').simpleLightbox({

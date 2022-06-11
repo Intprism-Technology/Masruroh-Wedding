@@ -1,7 +1,7 @@
 {
     "pria": {
         "short_name": "Afif & Lilis",
-        "date": "25 July 2022",
+        "date": "24 July 2022",
         "hour": "08:00:00",
         "f_name": "Afif",
         "s_name": "Lilis",
@@ -20,17 +20,26 @@
             "year":"2022",
             "month":"July",
             "day_num":"24",
-            "location":"Kediaman Mempelai Wanita",
+            "location":"Kediaman Mempelai Putri",
             "time_range":"08:00 - Selesai",
             "address": "Ds. Sidoharjo, Dsn. Tumpak RT 32 RW 06, Gang 2, Kec. Gedeg, Kab. Mojokerto, Jawa Timur."
         },
         "reception_date": {
+            "day":"Minggu",
+            "year":"2022",
+            "month":"July",
+            "day_num":"24",
+            "location":"Kediaman Mempelai Putri",
+            "time_range":"Bebas",
+            "address": "Ds. Sidoharjo, Dsn. Tumpak RT 32 RW 06, Gang 2, Kec. Gedeg, Kab. Mojokerto, Jawa Timur."
+        },
+        "reception_date_s": {
             "day":"Senin",
             "year":"2022",
             "month":"July",
             "day_num":"25",
             "location":"Kediaman Mempelai Pria",
-            "time_range":"08:00 - Selesai",
+            "time_range":"Bebas",
             "address": "Ds. Batankrajan RT 02 RW 04, Kec. Gedeg, Kab. Mojokerto, Jawa Timur."
         },
         "gmaps": {

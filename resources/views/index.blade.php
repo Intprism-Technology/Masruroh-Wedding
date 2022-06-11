@@ -18,7 +18,7 @@
     <meta name=keywords content="datengdong,undangan,pernikahan,online,website,wedding,invitation">
     <meta property="og:title" content="{{$data['pria']['short_name']}} Wedding">
     <meta property="og:description" content="{{$data['pria']['short_name']}} are getting married on {{$data['pria']['akad_date']['day']}}, {{$data['pria']['date']}}.">
-    <meta property="og:image" content="{{asset('assets/images/1638808563359.webp')}}">
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/800px-Image_created_with_a_mobile_phone.png">
     <title>{{$data['pria']['short_name']}} Wedding</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">

@@ -389,6 +389,11 @@
                 /* margin-left:1em; */
             }
         }
+        .location .card{
+            background-color: rgba(255, 255, 255, 0.30) !important;
+            color: #1c1c1c !important;
+            font-weight: bolder;
+        }
     </style>
     
     <section class="gallery" id="gallery" style="display:none;">

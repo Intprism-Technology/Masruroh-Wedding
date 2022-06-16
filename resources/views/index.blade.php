@@ -70,7 +70,7 @@
         </ul>
     </nav>
     <section
-        style="background:url({{asset('assets/images/welcome-banner.jpeg')}}) center no-repeat;"
+        style="background:url({{asset('assets/images/1638808563608.webp')}}) center no-repeat;"
         class="cover" id="home">
         <div class="title text-center">
             <div data-aos="fade-up" data-aos-delay="200">

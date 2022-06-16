@@ -15,7 +15,7 @@
     <meta name=author content="Afif Burhanuddin Nur">
     <meta name=language content="Indonesia">
     <meta name=description content="{{$data['pria']['short_name']}} are getting married on {{$data['pria']['akad_date']['day']}}, {{$data['pria']['date']}}.">
-    <meta name=keywords content="datengdong,undangan,pernikahan,online,website,wedding,invitation">
+    <meta name=keywords content="afif & lilis wedding,undangan,pernikahan,online,website,wedding,invitation">
     <meta property="og:type" content="website" />
     <meta property="og:title" content="{{$data['pria']['short_name']}} Wedding"/>
     <meta property="og:description" content="{{$data['pria']['short_name']}} are getting married on {{$data['pria']['akad_date']['day']}}, {{$data['pria']['date']}}."/>
@@ -60,7 +60,7 @@
                             d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 3.5c0-.276.244-.5.545-.5h10.91c.3 0 .545.224.545.5v1c0 .276-.244.5-.546.5H2.545C2.245 5 2 4.776 2 4.5v-1zm8.854 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z">
                         </path>
                     </svg><span class="d-none d-lg-block"> Event </span></a></li>
-            <li class="nav-item"><a class="nav-link" href="#countdown"><i class="fa fa-map-location"></i><span class="d-none d-lg-block"> Location </span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#countdown"><i class="fa fa-map-location" style="font-size: x-large;"></i><span class="d-none d-lg-block"> Location </span></a></li>
             <li class="nav-item"><a class="nav-link" href="#guestbook"><svg width=1em height=1em viewBox="0 0 16 16"
                         class="bi bi-chat-left-dots-fill" fill="currentColor" xmlns="https://www.w3.org/2000/svg">
                         <path fill-rule="evenodd"
@@ -70,20 +70,20 @@
         </ul>
     </nav>
     <section
-        style="background:url({{asset('assets/images/1638808563359.webp')}}) center no-repeat;"
+        style="background:url({{asset('assets/images/welcome-banner.jpeg')}}) center no-repeat;"
         class="cover" id="home">
         <div class="title text-center">
             <div data-aos="fade-up" data-aos-delay="200">
                 <h5 class="mt-4 mb-3 text-uppercase">Hello, You're Invited </h5>
                 <div class="d-flex justify-content-center">
-                    <img src=https://gurasanatalia.datengdong.com/themes/evergreen/images/sparator.png alt="sparator"
+                    <img src={{asset('assets/images/sparator.png')}} alt="sparator"
                         class="mahkota">
                 </div>
                 <h5 class="font-weight mt-3 text-uppercase">The Wedding Of</h5>
                 <h2 class="mt-5 mb-5 display-4">
                     {{$data['pria']['short_name']}}
                 </h2>
-                <h5 class="font-weight">{{$data['pria']['date']}}</h5>
+                <h5 class="font-weight">{!!$data['pria']['date_banner']!!}</h5>
                 <br>
                 <button type=button class="btn btn-md btn-secondary open_invitation px-5" style="z-index:100">Open
                     Invitation</button>
@@ -99,16 +99,16 @@
             <header class="text-center text-white vh-100 row align-items-center justify-content-center">
                 <div class="col" style="margin-bottom:100px;">
                     <br><br><br>
-                    <img src=https://gurasanatalia.datengdong.com/themes/evergreen/images/sparator.png alt="sparator"
+                    <img src={{asset('assets/images/sparator.png')}} alt="sparator"
                         style="max-width:120px;max-height:120px">
                     <h3 class="mt-2">The Wedding Of</h3>
                     <h1 class="display-1 font-weight-bold mb-4">{{$data['pria']['short_name']}}</h1>
-                    <p class="lead mb-5">{{$data['pria']['date']}}</p>
+                    <p class="lead mb-5">{!!$data['pria']['date_banner']!!}</p>
                 </div>
             </header>
         </div>
         <div class="custom-shape-divider-bottom-1610288749">
-            <img src=https://gurasanatalia.datengdong.com/themes/evergreen/images/sparator-1.svg alt="">
+            <img src={{asset('assets/images/sparator-1.svg')}} alt="">
         </div>
     </section>
 
@@ -116,7 +116,7 @@
 
     <section class="couple" id="couple">
         <br><br>
-        <img src=https://gurasanatalia.datengdong.com/themes/evergreen/images/sparator2.png alt="list" class="mb-3"
+        <img src={{asset('assets/images/sparator2.png')}} alt="list" class="mb-3"
             style="max-height:60px" data-aos="zoom-in" data-aos-delay="100">
         <div class="d-flex w-100 align-items-center justify-content-center mb-3" data-aos="flip-up"
             data-aos-delay="200">
@@ -136,7 +136,7 @@
                     <div class="row">
                         <div class="col-12 px-5">
                             <div class="couple-ring">
-                                <img src={{asset('assets/images/lilis.jpeg')}}
+                                <img src={{asset('assets/images/lilis.webp')}}
                                     alt="Lilis Photo" class="img-fluid">
                             </div>
                             <h2 class="mt-3">
@@ -152,7 +152,7 @@
 
                             <div class="mt-4 socmed">
                                 <a href="{{$data['pria']['s_instagram']}}" rel="nofollow" target="_blank"><img
-                                        src=https://gurasanatalia.datengdong.com/images/instagram.png width=20px
+                                        src={{asset('assets/images/instagram.png')}} width=20px
                                         alt="instagram"></a>
                             </div>
                         </div>
@@ -163,7 +163,7 @@
                     <div class="row">
                         <div class="col-12 px-5">
                             <div class="couple-ring">
-                                <img src={{asset('assets/images/afif.jpg')}}
+                                <img src={{asset('assets/images/afif.webp')}}
                                     alt="Afif Photo" class="img-fluid">
                             </div>
                             <h2 class="mt-3">
@@ -179,7 +179,7 @@
 
                             <div class="mt-4 socmed">
                                 <a href="{{$data['pria']['f_instagram']}}" rel="nofollow" target="_blank"><img
-                                        src=https://gurasanatalia.datengdong.com/images/instagram.png width=20px
+                                        src={{asset('assets/images/instagram.png')}} width=20px
                                         alt="instagram"></a>
                             </div>
                         </div>
@@ -199,10 +199,10 @@
     <section class="location" id="event"
         style="background:url({{asset('assets/images/1638808563608.webp')}}) center center no-repeat;background-size: cover;">
         <div class="custom-shape-divider-top-1610288850">
-            <img src=https://gurasanatalia.datengdong.com/themes/evergreen/images/sparator-1.svg alt="brush">
+            <img src={{asset('assets/images/sparator-1.svg')}} alt="brush">
         </div>
         <div class="container py-5">
-            <img src=https://gurasanatalia.datengdong.com/themes/evergreen/images/sparator.png alt="list" class="mb-3"
+            <img src={{asset('assets/images/sparator.png')}} alt="list" class="mb-3"
                 style="max-height:50px" data-aos="zoom-in" data-aos-delay="100">
             <div class="d-flex w-100 align-items-center justify-content-center mb-5" data-aos="flip-up"
                 data-aos-delay="200">
@@ -287,13 +287,13 @@
             </div>
         </div>
         <div class="custom-shape-divider-bottom-1614342402">
-            <img src=https://gurasanatalia.datengdong.com/themes/evergreen/images/sparator-1.svg alt="brush">
+            <img src={{asset('assets/images/sparator-1.svg')}} alt="brush">
         </div>
     </section>
 
     <section id="countdown">
         <div class="container text-center mt-5">
-            <img src=https://gurasanatalia.datengdong.com/themes/evergreen/images/sparator2.png alt="list" class="mb-3"
+            <img src={{asset('assets/images/sparator2.png')}} alt="list" class="mb-3"
                 style="max-height:50px" data-aos="zoom-in" data-aos-delay="100">
             <div class="d-flex w-100 align-items-center justify-content-center mb-5 mt-2" data-aos="flip-up"
                 data-aos-delay="200">
@@ -349,29 +349,51 @@
                 <br><br><br>
             </div>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 border-maps-1">
                     <div class="alert alert-success">Lokasi Kediaman Mempelai Putri</div>
+                    <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=-7.433975518526124,%20112.43490208190335+(Lilis%20Putri%20Rizqiyah)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
                     <a target="_blank"
                     href="https://maps.google.com/maps?ll=-7.433975,112.434902&z=12&t=m&hl=en&gl=US&mapclient=embed&q=7%C2%B026%2702.3%22S%20112%C2%B026%2705.7%22E%20-7.433976%2C%20112.434902@-7.4339755,112.4349021"
                     class="btn btn-primary mt-1 mb-2 mx-1" data-aos="fade-up" data-aos-delay="500">Open Google Map</a>
-                    <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=-7.433975518526124,%20112.43490208190335+(Lilis%20Putri%20Rizqiyah)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
                 </div>
-                <div class="col-md-6">
+                <img src={{asset('assets/images/sparator2.png')}} alt="list" class="mb-3 enable-mobile"
+                style="max-height:50px; display:none;" data-aos="zoom-in" data-aos-delay="100">
+                <div class="col-md-6 border-maps-2">
                     <div class="alert alert-success">Lokasi Kediaman Mempelai Pria</div>
+                    <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=-7.431464020941175,%20112.41408769379359+(Afif%20Burhanuddin%20Nur)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
                     <a target="_blank"
                     href="https://maps.google.com/maps?ll=-7.431464,112.414088&z=12&t=m&hl=en&gl=US&mapclient=embed&q=7%C2%B025%2753.3%22S%20112%C2%B024%2750.7%22E%20-7.431464%2C%20112.414088@-7.431464,112.4140877"
                     class="btn btn-primary mt-1 mb-2 mx-1" data-aos="fade-up" data-aos-delay="500">Open Google Map</a>
-                    <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=-7.431464020941175,%20112.41408769379359+(Afif%20Burhanuddin%20Nur)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
                 </div>
             </div>
         </div>
     </section>
+    <style>
+        @media only screen and (max-width: 766px) {
+            .enable-mobile{
+                display:block !important;
+            }
+            .border-maps-1{
+                /* border: 3px solid #035016; */
+                padding: 1em;
+                border-radius: 5px;
+                /* margin-left:-1em; */
+            }
+            .border-maps-2{
+                /* border: 3px solid #035016; */
+                padding: 1em;
+                border-radius: 5px;
+                margin-top:1em;
+                /* margin-left:1em; */
+            }
+        }
+    </style>
     
     <section class="gallery" id="gallery" style="display:none;">
         <div class="container mb-5">
-            <img src=https://gurasanatalia.datengdong.com/themes/evergreen/images/sparator2.png alt="list" class="mb-3"
+            <img src={{asset('assets/images/sparator2.png')}} alt="list" class="mb-3"
                 style="max-height:50px" data-aos="zoom-in" data-aos-delay="100">
             <div class="d-flex w-100 align-items-center justify-content-center mb-5" data-aos="flip-up"
                 data-aos-delay="200">
@@ -381,8 +403,8 @@
             <div class="col-lg-12">
             <div class="row">
                     <div class="col-md-3 col-6 py-2 px-2 frame" data-aos="zoom-in" data-aos-delay="100">
-                        <a href="https://demo.datengdong.com/uploads/original/gallery/1949d9111354e8962623050b26440179f5caddd0.jpg">
-                            <img src=https://demo.datengdong.com/uploads/thumbs/gallery/1949d9111354e8962623050b26440179f5caddd0MS.jpg alt="Gallery 1" class="img-fluid" style="border:unset !important;"></a>
+                        <a href="#">
+                            <img src=# alt="Gallery 1" class="img-fluid" style="border:unset !important;"></a>
                     </div>
                 </div>
             </div>
@@ -399,12 +421,12 @@
             </div>
         </div>
         <div class="custom-shape-divider-bottom-1614342402">
-            <img src=https://gurasanatalia.datengdong.com/themes/evergreen/images/sparator-1.svg alt="brush">
+            <img src={{asset('assets/images/sparator-1.svg')}} alt="brush">
         </div>
     </section>
     <section class="guestbook left-flower right-flower" id="guestbook">
         <div class="container">
-            <img src=https://gurasanatalia.datengdong.com/themes/evergreen/images/sparator2.png alt="list" class="mb-2"
+            <img src={{asset('assets/images/sparator2.png')}} alt="list" class="mb-2"
                 style="max-height:50px" data-aos="zoom-in" data-aos-delay="100">
             <div class="d-flex w-100 align-items-center justify-content-center mb-5" data-aos="flip-up"
                 data-aos-delay="200">
@@ -436,7 +458,7 @@
                             </div>
                             <div class="text-center">
                                 <button type=submit class="btn btn-light btn-wedding">Kirim <img
-                                        src=https://demo.datengdong.com/images/send-b.png alt="send icon"
+                                        src={{asset('assets/images/send-b.png')}} alt="send icon"
                                         style="width:20px;margin-left:5px"></button>
                             </div>
                         </form>
@@ -471,11 +493,11 @@
     </section>
     <div style="height:50px;width:60px;position: absolute;bottom:0;z-index:-1;visibility: hidden;">
         <audio id="player" autoplay loop>
-            <source src=https://gurasanatalia.datengdong.com/uploads/musics/04.mp3 type=audio/mp3> </audio> </div> <div
+            <source src={{asset('assets/music/04.mp3')}} type=audio/mp3> </audio> </div> <div
                 class="play-pause btn-play-pause" id="button-control"><img
-                src=https://demo.datengdong.com/images/play-pause.svg alt="play pause" width=25px></div>
+                src={{asset('assets/images/play-pause.svg')}} alt="play pause" width=25px></div>
     <button type=button class="btn-donation" data-toggle="modal" data-target="#modalGift">
-        <img src=https://demo.datengdong.com/images/gift-donation.png alt="donation"
+        <img src={{asset('assets/images/gift-donation.png')}} alt="donation"
             style="width:18px;margin-right:5px"> Kirim Hadiah
     </button>
     <div class="modal fade" id="modalGift" tabindex="-1" role="dialog" aria-labelledby="modalGiftLabel"
@@ -490,14 +512,14 @@
                 </div>
                 <div class="modal-body">
                     <div class="text-center mb-3">
-                        <img src=https://demo.datengdong.com/images/love.png alt="donation" style="max-width: 60px;">
+                        <img src={{asset('assets/images/love.png')}} alt="donation" style="max-width: 60px;">
                         <h5 class="font-bold text-center">Kirim Hadiah<br><small>{{$data['pria']['short_name']}}</small></h5>
                     </div>
                     <div class="row">
                         <div class="col-8">
                             <b>Mandiri </b><br>
                             <span onClick='copyText(this)'>1560015175435 <img
-                                    src=https://demo.datengdong.com/images/copy.png
+                                    src={{asset('assets/images/copy.png')}}
                                     style="height:13px;margin-top:-5px;cursor:pointer"></span><br>
                             a/n Afif Burhanuddin Nur <br>
 
@@ -512,7 +534,7 @@
                         <div class="col-8">
                             <b>BRI </b><br>
                             <span onClick='copyText(this)'>1560015175435 <img
-                                    src=https://demo.datengdong.com/images/copy.png
+                                    src={{asset('assets/images/copy.png')}}
                                     style="height:13px;margin-top:-5px;cursor:pointer"></span><br>
                             a/n Lilis Putri Rizqiyah <br>
 
@@ -527,7 +549,7 @@
                         <div class="col-8">
                             <b>Dana </b><br>
                             <span onClick='copyText(this)'>081233221294 <img
-                                    src=https://demo.datengdong.com/images/copy.png
+                                    src={{asset('assets/images/copy.png')}}
                                     style="height:13px;margin-top:-5px;cursor:pointer"></span><br>
                             a/n Afif Burhanuddin Nur <br>
 
@@ -537,43 +559,13 @@
                                 style="width:100%;margin-top:25px">
                         </div>
                     </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col-8">
-                            <b>ShopeePay </b><br>
-                            <span onClick='copyText(this)'>081233221294 <img
-                                    src=https://demo.datengdong.com/images/copy.png
-                                    style="height:13px;margin-top:-5px;cursor:pointer"></span><br>
-                            a/n Afif Burhanuddin Nur <br>
-
-                        </div>
-                        <div class="col-4">
-                            <img src=https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Shopee.svg/2560px-Shopee.svg.png alt="Bank "
-                                style="width:100%;margin-top:25px">
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col-8">
-                            <b>OVO </b><br>
-                            <span onClick='copyText(this)'>081233221294 <img
-                                    src=https://demo.datengdong.com/images/copy.png
-                                    style="height:13px;margin-top:-5px;cursor:pointer"></span><br>
-                            a/n Afif Burhanuddin Nur <br>
-
-                        </div>
-                        <div class="col-4">
-                            <img src=https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Logo_ovo_purple.svg/2560px-Logo_ovo_purple.svg.png alt="Bank "
-                                style="width:100%;margin-top:25px">
-                        </div>
-                    </div>
 
                 </div>
             </div>
         </div>
     </div>
     <div class="play-pause btn-play-pause" id="button-control">
-        <img src=https://gurasanatalia.datengdong.com/images/play-pause.svg alt="play pause" width=25px>
+        <img src={{asset('assets/images/play-pause.svg')}} alt="play pause" width=25px>
     </div>
     <script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js> </script>
     <script src=https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js> </script>
@@ -581,10 +573,11 @@
     <script src=https://unpkg.com/aos@2.3.1/dist/aos.js> </script>
     <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css">
     <script src=https://cdn.plyr.io/3.6.8/plyr.js></script>
-    <script src=https://gurasanatalia.datengdong.com/js/musicv2.js?v=1.0.0> </script>
+    <script>
+        document.addEventListener("DOMContentLoaded",()=>{var n=1;const t=new Plyr("#player");function i(){1==n&&t.play()}window.player=t,$(".open_invitation").click(function(){t.play()}),window.addEventListener("touchstart",function(n){i()}),window.addEventListener("scroll",function(n){i()}),$(".btn-play-pause").click(function(){0==n?(t.play(),n=1):(t.pause(),n=0)}),$(".open_invitation").click(function(){i()})});
+    </script>
     <script src=https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js> </script>
     <script src=https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js> </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
     <script>
         AOS.init();
         $('.gallery a').simpleLightbox({
@@ -607,7 +600,7 @@
             }, 1e3);
 
     </script>
-    <script src=https://gurasanatalia.datengdong.com/themes/evergreen/custom.js> </script>
+    <script src={{asset('assets/js/custom.js')}}> </script>
     <script>
         window.addEventListener("contextmenu", function (e) {
             e.preventDefault()

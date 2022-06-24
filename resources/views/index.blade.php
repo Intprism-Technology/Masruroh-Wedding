@@ -34,6 +34,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="{{asset('assets/themes/evergreen/style.css?v=1.0.6')}}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
+    <style>
+        @media only screen and (max-width: 766px) {
+            .enable-mobile{
+                display:block !important;
+            }
+            .border-maps-1{
+                /* border: 3px solid #035016; */
+                padding: 1em;
+                border-radius: 5px;
+                /* margin-left:-1em; */
+            }
+            .border-maps-2{
+                /* border: 3px solid #035016; */
+                padding: 1em;
+                border-radius: 5px;
+                margin-top:1em;
+                /* margin-left:1em; */
+            }
+        }
+        .location .card{
+            background-color: rgba(255, 255, 255, 0.30) !important;
+            color: #1c1c1c !important;
+            font-weight: bolder;
+        }
+        .lead.mb-5 .minim {
+            margin-top: -1.5em;
+            margin-bottom: -1.5em;
+        }
+    </style>
 </head>
 
 <body>
@@ -98,12 +128,12 @@
         <div class="container">
             <header class="text-center text-white vh-100 row align-items-center justify-content-center">
                 <div class="col" style="margin-bottom:100px;">
-                    <br><br><br>
+                    <br><br>
                     <img src={{asset('assets/images/sparator.png')}} alt="sparator"
                         style="max-width:120px;max-height:120px">
                     <h3 class="mt-2">The Wedding Of</h3>
                     <h1 class="display-1 font-weight-bold mb-4">{{$data['pria']['short_name']}}</h1>
-                    <p class="lead mb-5">{!!$data['pria']['date_banner']!!}</p>
+                    <div class="lead mb-5">{!!$data['pria']['date_banner']!!}</div>
                 </div>
             </header>
         </div>
@@ -370,31 +400,6 @@
             </div>
         </div>
     </section>
-    <style>
-        @media only screen and (max-width: 766px) {
-            .enable-mobile{
-                display:block !important;
-            }
-            .border-maps-1{
-                /* border: 3px solid #035016; */
-                padding: 1em;
-                border-radius: 5px;
-                /* margin-left:-1em; */
-            }
-            .border-maps-2{
-                /* border: 3px solid #035016; */
-                padding: 1em;
-                border-radius: 5px;
-                margin-top:1em;
-                /* margin-left:1em; */
-            }
-        }
-        .location .card{
-            background-color: rgba(255, 255, 255, 0.30) !important;
-            color: #1c1c1c !important;
-            font-weight: bolder;
-        }
-    </style>
     
     <section class="gallery" id="gallery" style="display:none;">
         <div class="container mb-5">
@@ -538,7 +543,7 @@
                     <div class="row">
                         <div class="col-8">
                             <b>BRI </b><br>
-                            <span onClick='copyText(this)'>1560015175435 <img
+                            <span onClick='copyText(this)'>068201006350530 <img
                                     src={{asset('assets/images/copy.png')}}
                                     style="height:13px;margin-top:-5px;cursor:pointer"></span><br>
                             a/n Lilis Putri Rizqiyah <br>

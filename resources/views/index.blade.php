@@ -113,7 +113,7 @@
                 <h2 class="mt-5 mb-5 display-4">
                     {{$data['pria']['short_name']}}
                 </h2>
-                <h5 class="font-weight">{!!$data['pria']['date_banner']!!}</h5>
+                <!-- <h5 class="font-weight">{!!$data['pria']['date_banner']!!}</h5> -->
                 <br>
                 <button type=button class="btn btn-md btn-secondary open_invitation px-5" style="z-index:100">Open
                     Invitation</button>

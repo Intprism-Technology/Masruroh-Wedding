@@ -59,10 +59,10 @@
             color: #1c1c1c !important;
             font-weight: bolder;
         }
-        .lead.mb-5 .minim {
+        /* .lead.mb-5 .minim {
             margin-top: -1.5em;
             margin-bottom: -1.5em;
-        }
+        } */
     </style>
 </head>
 

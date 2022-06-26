@@ -156,7 +156,7 @@
         <div class="container" data-aos="fade-up">
             <i>السلام عليكم ورحمة الله وبركاته</i><br><br>
             Maha suci Allah SWT yang telah menciptakan makhluk-Nya berpasang-pasangan. <br>Ya Allah, perkenankanlah kami
-            merangkai kasih sayang yang Kau ciptakan di antara putra-putri kami:<br><br>
+            merangkai kasih sayang di jalan yang Engkau ridhoi:<br><br>
         </div>
 
         <div class="col-lg-8 mx-auto mb-5">

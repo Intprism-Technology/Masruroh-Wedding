@@ -487,7 +487,7 @@
                                 alt="Image Avatar">
                             <div class="media-body">
                                 <div class="mb-2">
-                                    <h5 class="h6 mb-0 text-secondary">{{$comment->name}}</h5>
+                                    <h5 class="h6 mb-0 text-secondary">{{$comment->name}} -@if($comment->attendance == 1) (Hadir) @else (Tidak Hadir) @endif</h5>
                                     <small class="text-muted">{{date_format($comment->created_at, 'D F Y H:i')}}</small>
                                 </div>
 

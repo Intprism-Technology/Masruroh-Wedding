@@ -113,7 +113,7 @@
                         class="mahkota">
                 </div>
                 <h5 class="font-weight mt-3 text-uppercase">The Wedding Of</h5>
-                <h2 class="mt-5 mb-5 display-4">
+                <h2 class="mt-5 mb-4 display-4">
                     {{$data['pria']['short_name']}}
                 </h2>
                 <!-- <h5 class="font-weight">{!!$data['pria']['date_banner']!!}</h5> -->

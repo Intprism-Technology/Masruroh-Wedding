@@ -53,6 +53,9 @@
                 margin-top:1em;
                 /* margin-left:1em; */
             }
+            .title{
+                top:3% !important;
+            }
         }
         .location .card{
             background-color: rgba(255, 255, 255, 0.30) !important;

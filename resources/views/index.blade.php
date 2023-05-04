@@ -173,11 +173,11 @@
                                 <span style="font-size:1.6rem;color:#6792b7">{{$data['pria']['s_name']}}</span>
                                 <span class="d-block mt-3 serif">{{$data['pria']['s_full_name']}}</span>
                             </h2>
-                            <!-- <p>
+                            <p>
                                 {{$data['pria']['s_couple_sparator']}} <br>
                                 <b>{{$data['pria']['s_parent_father']}}
                                     <br>&<br>{{$data['pria']['s_parent_mother']}}</b>
-                            </p> -->
+                            </p>
 
 
                             <!-- <div class="mt-4 socmed">
@@ -200,11 +200,11 @@
                                 <span style="font-size:1.6rem;color:#6792b7">{{$data['pria']['f_name']}}</span>
                                 <span class="d-block mt-3 serif">{{$data['pria']['f_full_name']}}</span>
                             </h2>
-                            <!-- <p>
+                            <p>
                                 {{$data['pria']['f_couple_sparator']}} <br>
                                 <b>{{$data['pria']['f_parent_father']}}
                                     <br>&<br>{{$data['pria']['f_parent_mother']}}</b>
-                            </p> -->
+                            </p>
 
 
                             <!-- <div class="mt-4 socmed">

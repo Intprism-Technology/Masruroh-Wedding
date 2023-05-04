@@ -1,8 +1,3 @@
-@php
-#if (strpos($_SERVER['HTTP_HOST'], '127.0.0.1') !== false) {
-#    echo "Yes this is indeed the banana.com domain";
-#}
-@endphp
 <!DOCTYPE html>
 <html lang="id">
 
@@ -12,10 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="#">
     <meta name=title content="{{$data['pria']['short_name']}} Wedding">
-    <meta name=author content="Afif Burhanuddin Nur">
+    <meta name=author content="PT Intprism Computing Technology">
     <meta name=language content="Indonesia">
     <meta name=description content="{{$data['pria']['short_name']}} are getting married on {{$data['pria']['akad_date']['day']}}, {{$data['pria']['date']}}.">
-    <meta name=keywords content="afif & lilis wedding,undangan,pernikahan,online,website,wedding,invitation">
+    <meta name=keywords content="masruroh & jalil wedding,undangan,pernikahan,online,website,wedding,invitation">
     <meta property="og:type" content="website" />
     <meta property="og:title" content="{{$data['pria']['short_name']}} Wedding"/>
     <meta property="og:description" content="{{$data['pria']['short_name']}} are getting married on {{$data['pria']['akad_date']['day']}}, {{$data['pria']['date']}}."/>
@@ -106,7 +101,7 @@
         </ul>
     </nav>
     <section
-        style="background:url({{asset('assets/images/1638808563608.webp')}}) center no-repeat;"
+        style="background:url({{asset('https://weddingmarket.com/storage/images/artikelideacontent/new/eb3e9b232f2d4d1ef0ecc14513b17798deb5f05c.webp')}}) center no-repeat;"
         class="cover" id="home">
         <div class="title text-center">
             <div data-aos="fade-up" data-aos-delay="200">
@@ -119,7 +114,7 @@
                 <h2 class="mt-5 mb-4 display-4">
                     {{$data['pria']['short_name']}}
                 </h2>
-                <!-- <h5 class="font-weight">{!!$data['pria']['date_banner']!!}</h5> -->
+                <h5 class="font-weight">{!!$data['pria']['date_banner']!!}</h5>
                 <br>
                 <button type=button class="btn btn-md btn-secondary open_invitation px-5" style="z-index:100;margin-top: 5%;">Open
                     Invitation</button>
@@ -129,7 +124,7 @@
 
 
     <section
-        style="background:url({{asset('assets/images/1638808563359.webp')}}) center no-repeat;"
+        style="background:url({{asset('https://c4.wallpaperflare.com/wallpaper/485/442/377/wedding-flowers-wedding-dress-photography-depth-of-field-wallpaper-preview.jpg')}}) center no-repeat;"
         class="curved page-holder bg-cover" id="particles-js">
         <div class="container">
             <header class="text-center text-white vh-100 row align-items-center justify-content-center">
@@ -171,25 +166,25 @@
                     <div class="row">
                         <div class="col-12 px-5">
                             <div class="couple-ring">
-                                <img src={{asset('assets/images/lilis.webp')}}
-                                    alt="Lilis Photo" class="img-fluid">
+                                <img src={{asset('assets/images/jalil.png')}}
+                                    alt="Jalil Photo" class="img-fluid">
                             </div>
                             <h2 class="mt-3">
                                 <span style="font-size:1.6rem;color:#6792b7">{{$data['pria']['s_name']}}</span>
                                 <span class="d-block mt-3 serif">{{$data['pria']['s_full_name']}}</span>
                             </h2>
-                            <p>
+                            <!-- <p>
                                 {{$data['pria']['s_couple_sparator']}} <br>
                                 <b>{{$data['pria']['s_parent_father']}}
                                     <br>&<br>{{$data['pria']['s_parent_mother']}}</b>
-                            </p>
+                            </p> -->
 
 
-                            <div class="mt-4 socmed">
+                            <!-- <div class="mt-4 socmed">
                                 <a href="{{$data['pria']['s_instagram']}}" rel="nofollow" target="_blank"><img
                                         src={{asset('assets/images/instagram.png')}} width=20px
                                         alt="instagram"></a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -198,25 +193,25 @@
                     <div class="row">
                         <div class="col-12 px-5">
                             <div class="couple-ring">
-                                <img src={{asset('assets/images/afif.webp')}}
-                                    alt="Afif Photo" class="img-fluid">
+                                <img src={{asset('https://png.pngtree.com/png-clipart/20230405/original/pngtree-beautiful-muslimah-bride-illustration-png-image_9026634.png')}}
+                                    alt="Masruroh Photo" class="img-fluid">
                             </div>
                             <h2 class="mt-3">
                                 <span style="font-size:1.6rem;color:#6792b7">{{$data['pria']['f_name']}}</span>
                                 <span class="d-block mt-3 serif">{{$data['pria']['f_full_name']}}</span>
                             </h2>
-                            <p>
+                            <!-- <p>
                                 {{$data['pria']['f_couple_sparator']}} <br>
                                 <b>{{$data['pria']['f_parent_father']}}
                                     <br>&<br>{{$data['pria']['f_parent_mother']}}</b>
-                            </p>
+                            </p> -->
 
 
-                            <div class="mt-4 socmed">
+                            <!-- <div class="mt-4 socmed">
                                 <a href="{{$data['pria']['f_instagram']}}" rel="nofollow" target="_blank"><img
                                         src={{asset('assets/images/instagram.png')}} width=20px
                                         alt="instagram"></a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -232,7 +227,7 @@
 
 
     <section class="location" id="event"
-        style="background:url({{asset('assets/images/1638808563608.webp')}}) center center no-repeat;background-size: cover;">
+        style="background:url({{asset('https://c4.wallpaperflare.com/wallpaper/818/872/54/flowers-fabric-flowers-engagement-rings-wallpaper-preview.jpg')}}) center center no-repeat;background-size: cover;">
         <div class="custom-shape-divider-top-1610288850">
             <img src={{asset('assets/images/sparator-1.svg')}} alt="brush">
         </div>
@@ -370,26 +365,26 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-8 mx-auto">
+            <!-- <div class="col-lg-8 mx-auto">
                 <br><br>
-                <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20220724T000000Z%2F20220725T160000Z&text=Afif%20%26%20Lilis%20Wedding&details=Afif%20%26%20Lilis%20Wedding%0A%0AResepsi%20di%20kediaman%20mempelai%20putri%20(24%20July%202022)%0AGoogle%20Maps%3A%20https%3A%2F%2Fgoo.gl%2Fmaps%2FTkSJ387pebujwYNY6%0A%0AResepsi%20di%20kediaman%20mempelai%20pria%20(25%20July%202022)%0AGoogle%20Maps%3A%20https%3A%2F%2Fgoo.gl%2Fmaps%2FDcNhtbiEnCt86Pyj9&location=Kediaman%20Mempelai&allday=false"
+                <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20220724T000000Z%2F20220725T160000Z&text=Masruroh%20%26%20Jalil%20Wedding&details=Masruroh%20%26%20Jalil%20Wedding%0A%0AResepsi%20di%20kediaman%20mempelai%20putri%20(24%20July%202022)%0AGoogle%20Maps%3A%20https%3A%2F%2Fgoo.gl%2Fmaps%2FTkSJ387pebujwYNY6%0A%0AResepsi%20di%20kediaman%20mempelai%20pria%20(25%20July%202022)%0AGoogle%20Maps%3A%20https%3A%2F%2Fgoo.gl%2Fmaps%2FDcNhtbiEnCt86Pyj9&location=Kediaman%20Mempelai&allday=false"
                     target="_blank" class="btn btn-secondary mt-2 mx-1" data-aos="fade-up" data-aos-delay="600">Google
                     Calendar</a>
-                <a href="https://calendar.yahoo.com/?v=60&title=Afif%20%26%20Lilis%20Wedding&desc=Afif%20%26%20Lilis%20Wedding%0A%0AResepsi%20di%20kediaman%20mempelai%20putri%20(24%20July%202022)%0AGoogle%20Maps%3A%20https%3A%2F%2Fgoo.gl%2Fmaps%2FTkSJ387pebujwYNY6%0A%0AResepsi%20di%20kediaman%20mempelai%20pria%20(25%20July%202022)%0AGoogle%20Maps%3A%20https%3A%2F%2Fgoo.gl%2Fmaps%2FDcNhtbiEnCt86Pyj9&in_loc=Kediaman%20Mempelai&st=20220724T070000&dur=4000"
+                <a href="https://calendar.yahoo.com/?v=60&title=Masruroh%20%26%20Jalil%20Wedding&desc=Masruroh%20%26%20Jalil%20Wedding%0A%0AResepsi%20di%20kediaman%20mempelai%20putri%20(24%20July%202022)%0AGoogle%20Maps%3A%20https%3A%2F%2Fgoo.gl%2Fmaps%2FTkSJ387pebujwYNY6%0A%0AResepsi%20di%20kediaman%20mempelai%20pria%20(25%20July%202022)%0AGoogle%20Maps%3A%20https%3A%2F%2Fgoo.gl%2Fmaps%2FDcNhtbiEnCt86Pyj9&in_loc=Kediaman%20Mempelai&st=20220724T070000&dur=4000"
                     target="_blank" class="btn btn-secondary mt-2 mx-1" data-aos="fade-up" data-aos-delay="700">Yahoo
                     Calendar</a>
-                <a href="https://outlook.live.com/calendar/0/deeplink/compose?rru=addevent&path=%2Fcalendar%2Faction%2Fcompose&startdt=2022-07-24T00%3A00%3A00Z&enddt=2022-07-25T16%3A00%3A00Z&subject=Afif%20%26%20Lilis%20Wedding&body=Afif%20%26%20Lilis%20Wedding%0A%0AResepsi%20di%20kediaman%20mempelai%20putri%20(24%20July%202022)%0AGoogle%20Maps%3A%20https%3A%2F%2Fgoo.gl%2Fmaps%2FTkSJ387pebujwYNY6%0A%0AResepsi%20di%20kediaman%20mempelai%20pria%20(25%20July%202022)%0AGoogle%20Maps%3A%20https%3A%2F%2Fgoo.gl%2Fmaps%2FDcNhtbiEnCt86Pyj9&location=Kediaman%20Mempelai&allday=false"
+                <a href="https://outlook.live.com/calendar/0/deeplink/compose?rru=addevent&path=%2Fcalendar%2Faction%2Fcompose&startdt=2022-07-24T00%3A00%3A00Z&enddt=2022-07-25T16%3A00%3A00Z&subject=Masruroh%20%26%20Jalil%20Wedding&body=Masruroh%20%26%20Jalil%20Wedding%0A%0AResepsi%20di%20kediaman%20mempelai%20putri%20(24%20July%202022)%0AGoogle%20Maps%3A%20https%3A%2F%2Fgoo.gl%2Fmaps%2FTkSJ387pebujwYNY6%0A%0AResepsi%20di%20kediaman%20mempelai%20pria%20(25%20July%202022)%0AGoogle%20Maps%3A%20https%3A%2F%2Fgoo.gl%2Fmaps%2FDcNhtbiEnCt86Pyj9&location=Kediaman%20Mempelai&allday=false"
                     target="_blank" class="btn btn-secondary mt-2 mx-1" data-aos="fade-up" data-aos-delay="700">Outlook
                     Calendar</a>
                 <br><br><br>
-            </div>
+            </div> -->
             <div class="row">
                 <div class="col-md-6 border-maps-1">
                     <div class="alert alert-success">Lokasi Kediaman Mempelai Putri</div>
                     <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=-7.433975518526124,%20112.43490208190335+(Lilis%20Putri%20Rizqiyah)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d989.076283874257!2d112.41357926962617!3d-7.431446999536191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zN8KwMjUnNTMuMiJTIDExMsKwMjQnNTEuMiJF!5e0!3m2!1sid!2sid!4v1683165411018!5m2!1sid!2sid"></iframe>
                     <a target="_blank"
-                    href="https://maps.google.com/maps?ll=-7.433975,112.434902&z=12&t=m&hl=en&gl=US&mapclient=embed&q=7%C2%B026%2702.3%22S%20112%C2%B026%2705.7%22E%20-7.433976%2C%20112.434902@-7.4339755,112.4349021"
+                    href="https://www.google.com/maps/place/7%C2%B025'53.2%22S+112%C2%B024'51.2%22E/@-7.431447,112.4135793,19z/data=!3m1!4b1!4m4!3m3!8m2!3d-7.431447!4d112.414223"
                     class="btn btn-primary mt-1 mb-2 mx-1" data-aos="fade-up" data-aos-delay="500">Open Google Map</a>
                 </div>
                 <img src={{asset('assets/images/sparator2.png')}} alt="list" class="mb-3 enable-mobile"
@@ -397,9 +392,9 @@
                 <div class="col-md-6 border-maps-2">
                     <div class="alert alert-success">Lokasi Kediaman Mempelai Pria</div>
                     <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=-7.431464020941175,%20112.41408769379359+(Afif%20Burhanuddin%20Nur)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2771.9208488308645!2d112.4347911591128!3d-7.401815295278141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e780fd35c8420a5%3A0x48ec208b5d9889c!2sPasinan%20Wetan%2C%20Kupang%2C%20Kec.%20Jetis%2C%20Kabupaten%20Mojokerto%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1683165560519!5m2!1sid!2sid"></iframe>
                     <a target="_blank"
-                    href="https://maps.google.com/maps?ll=-7.431464,112.414088&z=12&t=m&hl=en&gl=US&mapclient=embed&q=7%C2%B025%2753.3%22S%20112%C2%B024%2750.7%22E%20-7.431464%2C%20112.414088@-7.431464,112.4140877"
+                    href="https://www.google.com/maps/place/Pasinan+Wetan,+Kupang,+Kec.+Jetis,+Kabupaten+Mojokerto,+Jawa+Timur/@-7.4018153,112.4347912,17.51z/data=!4m6!3m5!1s0x2e780fd35c8420a5:0x48ec208b5d9889c!8m2!3d-7.402226!4d112.4358518!16s%2Fg%2F11ghndmt21"
                     class="btn btn-primary mt-1 mb-2 mx-1" data-aos="fade-up" data-aos-delay="500">Open Google Map</a>
                 </div>
             </div>
@@ -427,7 +422,7 @@
     </section>
     <br><br>
     <section class="parallax text-center mt-5"
-        style="background-image: url({{asset('assets/images/2.webp')}});">
+        style="background-image: url({{asset('https://weddingmarket.com/storage/images/artikelidea/91817c74dd4ef0c4e1b0879da676545c2d9619c7.webp')}});">
         <div class="container">
             <div class="col-md-12 pt-4">
                 <p><span>"</span>Tidak ada solusi yang lebih baik bagi dua insan yang saling mencintai di banding
@@ -533,48 +528,17 @@
                     <div class="row">
                         <div class="col-8">
                             <b>Mandiri </b><br>
-                            <span onClick='copyText(this)'>1560015175435 <img
+                            <span onClick='copyText(this)'>085707484655 <img
                                     src={{asset('assets/images/copy.png')}}
                                     style="height:13px;margin-top:-5px;cursor:pointer"></span><br>
-                            a/n Afif Burhanuddin Nur <br>
+                            a/n Umi Masruroh <br>
 
                         </div>
                         <div class="col-4">
-                            <img src=https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Bank_Mandiri_logo_2016.svg/2560px-Bank_Mandiri_logo_2016.svg.png alt="Bank "
+                            <img src=https://1.bp.blogspot.com/-n_jPjNl97nw/YIJ78WnloPI/AAAAAAAACks/xPjLQ2YpcXwyPf64C708UExQOrJitxHSgCNcBGAsYHQ/w1200-h630-p-k-no-nu/ShopeePay.png alt="Bank "
                                 style="width:100%;margin-top:25px">
                         </div>
                     </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col-8">
-                            <b>BRI </b><br>
-                            <span onClick='copyText(this)'>068201006350530 <img
-                                    src={{asset('assets/images/copy.png')}}
-                                    style="height:13px;margin-top:-5px;cursor:pointer"></span><br>
-                            a/n Lilis Putri Rizqiyah <br>
-
-                        </div>
-                        <div class="col-4">
-                            <img src=https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/BANK_BRI_logo.svg/2560px-BANK_BRI_logo.svg.png alt="Bank "
-                                style="width:100%;margin-top:25px">
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col-8">
-                            <b>Dana </b><br>
-                            <span onClick='copyText(this)'>081233221294 <img
-                                    src={{asset('assets/images/copy.png')}}
-                                    style="height:13px;margin-top:-5px;cursor:pointer"></span><br>
-                            a/n Afif Burhanuddin Nur <br>
-
-                        </div>
-                        <div class="col-4">
-                            <img src=https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Logo_dana_blue.svg/1200px-Logo_dana_blue.svg.png alt="Bank "
-                                style="width:100%;margin-top:25px">
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>

@@ -27,11 +27,11 @@ class IndexController extends Controller
         }else{
             $successComment = '';
         }
-        $allComment = Comment::orderBy('created_at', 'DESC')->get();
+        // $allComment = Comment::orderBy('created_at', 'DESC')->get();
         return view('index', compact(
             'data',
             'successComment',
-            'allComment'
+            // 'allComment'
         ));
     }
 

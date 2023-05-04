@@ -8,12 +8,12 @@
         "s_name": "Jalil",
         "f_full_name": "Umi Masruroh",
         "s_full_name": "M. Abdul Jalil",
-        "f_couple_sparator": "",
-        "s_couple_sparator": "",
-        "f_parent_father": "",
-        "f_parent_mother": "",
-        "s_parent_father": "",
-        "s_parent_mother": "",
+        "f_couple_sparator": "Putri kedua dari ",
+        "s_couple_sparator": "Putra kedua dari",
+        "f_parent_father": "Bapak Shofian",
+        "f_parent_mother": "Ibu Musfaidah",
+        "s_parent_father": "Bapak Chusaini",
+        "s_parent_mother": "Ibu Sunarlik",
         "f_instagram": "",
         "s_instagram": "",
         "akad_date": {
@@ -23,7 +23,7 @@
             "day_num":"05",
             "location":"KUA",
             "time_range":"09:00 - Selesai",
-            "address": "KUA Setempat"
+            "address": "KUA Kec. Gedeg"
         },
         "reception_date": {
             "day":"Sabtu",
